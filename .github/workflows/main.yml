@@ -36,7 +36,7 @@ jobs:
 
     - name: Run PlatformIO Build
       working-directory: ./marlin_src
-      run: platformio run -e mks_robin_nano_v1_3_f4
+      run: platformio run -e mks_robin_nano_v1v2
 
     - name: Upload Firmware Artifact
       uses: actions/upload-artifact@v4
