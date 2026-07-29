@@ -34,10 +34,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install platformio
 
-    - name: Run PlatformIO Build
+    - - name: Run PlatformIO Build
       working-directory: ./marlin_src
-      run: platformio run -e Robin_nano_v3 # أو اسم البيئة (default_envs) الخاصة بكت بوردتك
-
+      run: platformio run -e mks_robin_nano_v1_3
+      
     - name: Upload Firmware Artifact
       uses: actions/upload-artifact@v4
       with:
